@@ -1,6 +1,6 @@
 import type { PluginListenerHandle } from '@capacitor/core';
 
-export interface UdpPluginPlugin {
+export interface UdpPlugin {
   create(options?: { properties?: { name?: string, bufferSize?: number } }): Promise<{ socketId: number, ipv4: string, ipv6: string }>;
 
   update(options: { socketId: number, properties: { name?: string, bufferSize?: number } }): Promise<any>;

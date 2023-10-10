@@ -43,7 +43,7 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 import org.json.JSONException;
 
 @CapacitorPlugin(name = "UdpPlugin")
-public class UdpPluginPlugin extends Plugin {
+public class UdpPlugin extends Plugin {
 
     private static final String LOG_TAG = "CapacitorUdpPlugin";
     private Map<Integer, UdpSocket> sockets = new ConcurrentHashMap<Integer, UdpSocket>();

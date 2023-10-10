@@ -1,8 +1,8 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { UdpPluginPlugin } from './definitions';
+import type { UdpPlugin } from './definitions';
 
-const UdpPlugin = registerPlugin<UdpPluginPlugin>('UdpPlugin', {
+const UdpPlugin = registerPlugin<UdpPlugin>('UdpPlugin', {
   web: () => import('./web').then(m => new m.UdpPluginWeb()),
 });
 

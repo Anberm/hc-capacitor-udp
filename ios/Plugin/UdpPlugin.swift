@@ -6,8 +6,8 @@ import CocoaAsyncSocket
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(UdpPluginPlugin)
-public class UdpPluginPlugin: CAPPlugin {
+@objc(UdpPlugin)
+public class UdpPlugin: CAPPlugin {
     private var sockets: [Int: UdpSocket] = [Int: UdpSocket]()
     private var nextSocketId: Int = 0
     

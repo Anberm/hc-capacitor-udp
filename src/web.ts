@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { WebPlugin } from '@capacitor/core';
 
-import type { UdpPluginPlugin } from './definitions';
+import type { UdpPlugin } from './definitions';
 
-export class UdpPluginWeb extends WebPlugin implements UdpPluginPlugin {
+export class UdpPluginWeb extends WebPlugin implements UdpPlugin {
   create(_options?: { properties?: { name?: string | undefined; bufferSize?: number | undefined; } | undefined; } | undefined): Promise<{ socketId: number; ipv4: string; ipv6: string; }> {
     throw new Error('Method not implemented.');
   }
